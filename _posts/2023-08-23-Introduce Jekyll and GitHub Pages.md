@@ -6,6 +6,8 @@ categories: website
 tags: Jekyll gitHub pages
 ---
 
+### Jekyll 
+
 ## What is Jekyll
 
 - Jekyll is a static website generator
@@ -22,19 +24,36 @@ tags: Jekyll gitHub pages
 
 ---
 <br>
-## What is GitHub Pages
 
-GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
+## Jekyll file system.
 
-- It support User site(http(s)://<username>.github.io) or project site (http(s)://<username>.github.io/<repository>).
-- You can publish your site when changes are pushed to a specific branch, GitHub Pages will use Jekyll to build your site by default.
-- GitHub Pages does not support server-side languages such as PHP, Ruby, or Pythoy.
+# General
+- SCSS (Sass) files into CSS (.scss -> .css), and Markdown into HTML (.md -> .html)
+- The "distribution" folder is called _site. This is what the static site generator generates! Never place any files in that folder; they will be deleted and overwritten.
+- The _sass folder is for Sass partials. Every file in here should begin with an underscore, and it will compile into the css folder.
+- Any file or folder placed into the main directory will compile into the _site directory as-is.
+
+# Configuration
+
+- In the main directory, there's a file called ***_config.yml***.
+- This file contain all configuratin for the website.
+- Like **url**, **baseurl** etc.
+
+# Customizing Jekyll Theme
+
+- **_includes** are files that should show up on every page - header, footer, etc.
+- **_layouts**: The layout that content will conform to.
+- **_pages**: It can contain all markdown files here so the main directory stays clean.
+- **_posts** : This is where blogs go to.
+- **blog** folder: contain an index.html. the main blog page that will contain all posts.
+- **_sass** the sass partials
 
 ---
 <br>
-## Jekyll syntax
 
-# Front Matter
+### Jekyll syntax
+
+## Front Matter
 
 The front matter is the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 Here is a basic example:
@@ -59,6 +78,40 @@ categories: CATEGORY-1 CATEGORY-2
 ```
 
 Any file that contains a YAML front matter block will be processed by Jekyll as a special file.
+
+## Liquid
+
+# It is a templating language which has three main components:
+- objects
+- tags
+- filters
+
+# Objects
+- Objects tell Liquid to output predefined variables as content on a page. Use double curly braces for objects: .
+- For example, 
+
+# Tags
+Tags define the logic and control flow for templates. Use curly braces and percent signs for tags: 
+
+# Filters
+- Filters change the output of a Liquid object. They are used within an output and are separated by a 
+- For example:
+
+This displays `Hi` instead of `hi`.
+
+---
+<br>
+
+
+### GitHub Pages
+
+## What is GitHub Pages
+
+GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
+
+- It support User site(http(s)://<username>.github.io) or project site (http(s)://<username>.github.io/<repository>).
+- You can publish your site when changes are pushed to a specific branch, GitHub Pages will use Jekyll to build your site by default.
+- GitHub Pages does not support server-side languages such as PHP, Ruby, or Pythoy.
 
 ---
 <br>
@@ -139,7 +192,8 @@ date: 2019-01-20
 ---
 
 <br>
-## FQA
+
+### FQA
 
 # How to update posts
 

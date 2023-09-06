@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SAML Main Points"
-date: 2023-08-30
+date: 2023-08-30 
 categories: Auth
 tags: SAML authentication authorization
 ---
@@ -20,18 +20,18 @@ tags: SAML authentication authorization
 
 ## Two common usage scenarios for SAML.
 
-1, IdP-initiated SSO(this is not popular one),
-2, SP-initiated SSO.
+- IdP-initiated SSO(this is not popular one),
+- SP-initiated SSO.
 
 # IdP-initiated SSO with SAML Authentication
 
 In this scenario, users first log in to the IdP system, which presents an application catalog. This catalog will contain visual icons of all the internal and external applications that the company has configured SSO for and that the user has privileges to access.
 When the user clicks on one of the images, the SAML flow is as follows:
 
-1, The SAML IdP takes the user’s identity, along with any other attributes that the two sides have agreed to communicate.
-2, It builds an XML-based SAML assertion.
-3, It signs the assertion with the private key of a public/private keypair that was exchanged between the IdP and SP when the SSO partnership was configured.
-4, It then either sends the assertion to the SP via the user’s browser or sends a reference to the assertion that the SP can use to securely retrieve the assertion.
+1. The SAML IdP takes the user’s identity, along with any other attributes that the two sides have agreed to communicate.
+2. It builds an XML-based SAML assertion.
+3. It signs the assertion with the private key of a public/private keypair that was exchanged between the IdP and SP when the SSO partnership was configured.
+4. It then either sends the assertion to the SP via the user’s browser or sends a reference to the assertion that the SP can use to securely retrieve the assertion.
 
 Once the SP has received the SAML assertion, it validates the signature using the public key in order to ensure the SAML assertion really came from its trusted IdP and that none of the values in the assertion have been modified.
 The SP can then extract the identity of the user from the SAML assertion along with any other attributes it needs. At this point, the user is on the service provider’s landing page, just as though they had logged into the site manually.
@@ -42,9 +42,9 @@ SP-initiated SSO starts when a user tries to access a resource at the service pr
 
 A few common ways the SP can determine which IDP to redirect the user to are:
 
-1, The SP may ask the user for their email address and use the domain of the email, such as bill@pingidentity.com, to determine which IdP to use.
-2, The SP may display a list of IdPs it supports and ask the user to choose the appropriate one.
-3, The resource URL may be specific to one IdP.
-4, The SP may have placed a cookie containing IdP information in the user’s browser the first time the user successfully signed on from the IDP and will use this information on subsequent accesses.
+1. The SP may ask the user for their email address and use the domain of the email, such as bill@pingidentity.com, to determine which IdP to use.
+2. The SP may display a list of IdPs it supports and ask the user to choose the appropriate one.
+3. The resource URL may be specific to one IdP.
+4. The SP may have placed a cookie containing IdP information in the user’s browser the first time the user successfully signed on from the IDP and will use this information on subsequent accesses.
 
 Once the SP has received the SAML assertion, it validates the signature using the public key in order to ensure the SAML assertion really came from its trusted IdP and that none of the values in the assertion have been modified. The SP can then extract the identity of the user from the SAML assertion along with any other attributes it needs. At this point, the user is on the service provider’s landing page, just as though they had logged into the site manually.

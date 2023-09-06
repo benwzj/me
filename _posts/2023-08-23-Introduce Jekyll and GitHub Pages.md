@@ -2,22 +2,20 @@
 layout: post
 title: " Introduce Jekyll and GitHub Pages "
 date: 2023-08-23
+featured: true
 categories: website
 tags: Jekyll gitHub pages
 ---
 
-### Jekyll 
+## **What is Jekyll**
 
-## What is Jekyll
+In short, Jekyll 
+- is ruby software. 
+- is a static website generator software.
+- can transfer some kind of files(like md, sass etc.) into static website files(like html, css, etc.)
+- can run in your own computor or GitHub pages.
 
-- Jekyll is a static website generator
-- It is ruby project.
-- It supports Markdown.
-- You can run Jekyll in your own computor to setup website server.
-- GitHub Pages use Jekyll to provide website service for your repo.
-
-# Jekyll requires the following:
-
+Jekyll requires the following:
 - Ruby version 2.5.0 or higher
 - RubyGems
 - GCC and Make
@@ -25,21 +23,21 @@ tags: Jekyll gitHub pages
 ---
 <br>
 
-## Jekyll file system.
+## **Jekyll file system**
 
-# General
+General Rules:
 - SCSS (Sass) files into CSS (.scss -> .css), and Markdown into HTML (.md -> .html)
 - The "distribution" folder is called _site. This is what the static site generator generates! Never place any files in that folder; they will be deleted and overwritten.
 - The _sass folder is for Sass partials. Every file in here should begin with an underscore, and it will compile into the css folder.
 - Any file or folder placed into the main directory will compile into the _site directory as-is.
 
-# Configuration
+### Configuration
 
 - In the main directory, there's a file called ***_config.yml***.
 - This file contain all configuratin for the website.
 - Like **url**, **baseurl** etc.
 
-# Customizing Jekyll Theme
+### Customizing Jekyll Theme
 
 - **_includes** are files that should show up on every page - header, footer, etc.
 - **_layouts**: The layout that content will conform to.
@@ -51,9 +49,7 @@ tags: Jekyll gitHub pages
 ---
 <br>
 
-### Jekyll syntax
-
-## Front Matter
+## **Front Matter**
 
 The front matter is the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 Here is a basic example:
@@ -79,44 +75,49 @@ categories: CATEGORY-1 CATEGORY-2
 
 Any file that contains a YAML front matter block will be processed by Jekyll as a special file.
 
-## Liquid
+## **Liquid**
 
-# It is a templating language which has three main components:
+Liquid is a templating language which has three main components:
 - objects
 - tags
 - filters
 
-# Objects
-- Objects tell Liquid to output predefined variables as content on a page. Use double curly braces for objects: .
-- For example, 
+### Objects
+Objects tell Liquid to output predefined variables as content on a page. Use double curly braces for objects.
+For example, `{ { page.title } }` displays the `page.title` variable.
 
-# Tags
-Tags define the logic and control flow for templates. Use curly braces and percent signs for tags: 
-
-# Filters
-- Filters change the output of a Liquid object. They are used within an output and are separated by a 
-- For example:
-
-This displays `Hi` instead of `hi`.
-
+### Tags
+Tags define the logic and control flow for templates. Use curly braces and percent signs for tags. 
+For example:
+```
+{ % if page.show_sidebar % }
+  <div class="sidebar">
+    sidebar content
+  </div>
+{ % endif % }
+```
+### Filters
+Filters change the output of a Liquid object. They are used within an output and are separated by a `|`
+For example:
+```
+{ { "hi" | capitalize } }
+```
 ---
 <br>
 
 
-### GitHub Pages
-
-## What is GitHub Pages
+## **GitHub Pages**
 
 GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
 
-- It support User site(http(s)://<username>.github.io) or project site (http(s)://<username>.github.io/<repository>).
-- You can publish your site when changes are pushed to a specific branch, GitHub Pages will use Jekyll to build your site by default.
-- GitHub Pages does not support server-side languages such as PHP, Ruby, or Pythoy.
+It support User site(http(s)://<username>.github.io) or project site (http(s)://<username>.github.io/<repository>).
+You can publish your site when changes are pushed to a specific branch, GitHub Pages will use Jekyll to build your site by default.
+GitHub Pages does not support server-side languages such as PHP, Ruby, or Pythoy.
 
 ---
 <br>
 
-## Setup GitHub Pages Steps
+## **Setup GitHub Pages Steps**
 
 <h3>Step 1: Enable GitHub Pages</h3>
 
@@ -193,9 +194,9 @@ date: 2019-01-20
 
 <br>
 
-### FQA
+## **FQA**
 
-# How to update posts
+### How to update posts
 
 - All posts is located in `_posts` directory. You can add and update posts from there.
 - Jekyll requires blog post files to be named according to the following format:
@@ -204,7 +205,7 @@ date: 2019-01-20
 
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file.
 
-# baseurl issue
+### baseurl issue
 
 When you setup github page in github, it sets this baseurl to your repo name, for example 'blogs', if your repo is 'blogs'.
 You can set this environment variable in \_config.yml file.
@@ -214,7 +215,3 @@ baseurl: "/blogs" # the subpath of your site
 ```
 
 Seting up this will be helpful if you want to test the website in your local machine.
-
-# test environment
-
-Need to install Ruby.

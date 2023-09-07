@@ -10,22 +10,23 @@ tags: Jekyll gitHub pages
 ## **What is Jekyll**
 
 In short, Jekyll 
-- is ruby software. 
-- is a static website generator software.
-- can transfer some kind of files(like md, sass etc.) into static website files(like html, css, etc.)
-- can run in your own computor or GitHub pages.
+- is ruby software
+- is a static website generator software
+- can transfer some kind of files(like md, html, sass etc.) into static website files(like html, css, etc.)
+- automtically update your website when you update your files (cool thing!)
+- can run in your own computor or GitHub pages
 
-Jekyll requires the following:
-- Ruby version 2.5.0 or higher
-- RubyGems
-- GCC and Make
+## **Jekyll Main Points**
 
----
-<br>
+- Use Front Matter
+- Use Liquid templating language
+- Support Markdown which is less verbose than raw HTML
+- Support Layouts which are templates that can be used by any page in your site and wrap around page content. They are stored in a directory called `_layouts`
+
 
 ## **Jekyll file system**
 
-General Rules:
+### General Rules:
 - SCSS (Sass) files into CSS (.scss -> .css), and Markdown into HTML (.md -> .html)
 - The "distribution" folder is called _site. This is what the static site generator generates! Never place any files in that folder; they will be deleted and overwritten.
 - The _sass folder is for Sass partials. Every file in here should begin with an underscore, and it will compile into the css folder.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: " Introduce Jekyll and GitHub Pages "
-date: 2023-08-23
+date: 2019-12-12
 featured: true
 categories: website
 tags: Jekyll gitHub pages

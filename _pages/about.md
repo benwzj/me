@@ -19,8 +19,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Born and grown up in China. But moved to Australia according to the spirit. 
-The best thing in my world is watching two kid growing up. And it is happening at the moment.
+Hey, I'm Ben! I'm a software developer working in Melboune. Welcome to my place on the web for my life, works, projects, sports and anything else I want to show the world. Check out the blog for my tutorials and more.
 
 
-I work as Software Engineer for 12 years in China. But this career paused when I moved to Melbourne. I came back to IT industry at 2020 when Covid19 came in our world. Now I create, deploy, maintain website for all of Australian and the rest of the world.
+I was Born and grown up in China. And now moved to Australia according to the spirit. Now I create, deploy, maintain software for all of Australian and the rest of the world.
+
+
+The best thing in my life is sharing space and time with my two little kids when they are growing up. And The best thing is happening at the moment :)
+
+

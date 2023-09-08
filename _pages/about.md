@@ -25,6 +25,8 @@ Hey, I'm Ben! I'm a software developer working in Melboune. Welcome to my place 
 I was Born and grown up in China. And now moved to Australia according to the spirit. Now I create, deploy, maintain software for all of Australian and the rest of the world.
 
 
-The best thing in my life is sharing space and time with my two little kids when they are growing up. And The best thing is happening at the moment :)
+The best thing in my life is sharing space and time with my two little kids when they are growing up. 
+
+The best thing is happening at the moment :)
 
 

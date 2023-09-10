@@ -437,7 +437,7 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 5px;
+    padding-top: 3px;
 
     .post-meta {
       color: var(--global-text-color-light);
@@ -453,14 +453,22 @@ footer.sticky-bottom {
     }
 
     a {
-      color: var(--global-text-color);
+      color: blue;
       text-decoration: none;
-
+      font-weight: 500;
+      font-size: 1.2rem;
       &:hover {
         color: var(--global-theme-color);
       }
     }
-
+    time {
+      color: gray;
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 500;
+      float: right;
+      padding-top: 0.25rem;
+    }
     mjx-container[jax="CHTML"][display="true"] {
       display: unset;
     }

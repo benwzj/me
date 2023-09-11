@@ -92,11 +92,12 @@ pagination:
   {% endif %}
 
   <ul class="post-list">
+    
     {%- for post in paginator.posts -%}
     <li>
       <div>
         <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-       <time>{{ post.date | date: '%b %-d' }}</time>
+       <time>{{ post.date | date: '%b %-d %Y' }}</time>
       </div>
     </li>
     {%- endfor -%}

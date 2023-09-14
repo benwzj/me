@@ -3,7 +3,7 @@ layout: post
 title: "Build your own personal brand"
 date: 2023-08-31
 categories: personality
-tage: personal career professional
+tags: personal career professional
 ---
 
 Today I watched a TED talk about 5 steps to build your own personal brand.

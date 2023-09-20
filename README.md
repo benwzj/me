@@ -4,3 +4,10 @@
 # deploy
 - **git push** your change
 - and then run **bin/deploy** script
+
+
+# using 
+- Github Page
+- Jekyll 
+- Bootstrap4
+

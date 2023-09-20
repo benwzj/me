@@ -22,11 +22,10 @@ social: false  # includes social icons at the bottom of the page
 Hey, I'm Ben! I'm a software developer working in Melboune. Welcome to my place on the web for my life, works, projects, sports and anything else I want to show the world. Check out the blog for my tutorials and more.
 
 
-I was Born and grown up in China. And now moved to Australia according to the spirit. Now I create, deploy, maintain software for all of Australian and the rest of the world.
+I was Born and grown up in China. And now moved to Australia according to the spirit. I create, deploy, maintain software for all of Australian and the rest of the world.
 
 
-The best thing in my life is sharing space and time with my two little kids when they are growing up. 
-
-The best thing is happening at the moment :)
+Sharing space and time with my two little kids is the best thing in my world. 
+And all these are happening now :)
 
 

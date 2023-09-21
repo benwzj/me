@@ -2,7 +2,7 @@
 layout: post
 title: "Build your own personal brand"
 date: 2023-08-31
-categories: personality
+categories: Personal
 tags: personal career professional
 ---
 

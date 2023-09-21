@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Blog Professor</a>
+subtitle: <a href='#'>Software Professional</a>
 
 profile:
   align: right
@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hey, I'm Ben! I'm a software developer working in Melboune. Welcome to my place on the web for my life, works, projects, sports and anything else I want to show the world. Check out the blog for my tutorials and more.
+Hey, I'm Ben! Welcome to my place on the web for my life, works, projects, sports and anything else I want to show the world. Check out the blog for my tutorials and more.
 
 
 I was Born and grown up in China. And now moved to Australia according to the spirit. I create, deploy, maintain software for all of Australian and the rest of the world.

@@ -3,8 +3,9 @@ layout: post
 title: " Introduce Jekyll and GitHub Pages "
 date: 2019-12-12
 featured: true
-categories: website
-tags: Jekyll gitHub pages
+categories: Website
+tag: gitHub pages
+tag: Jekyll
 ---
 
 ## **What is Jekyll**

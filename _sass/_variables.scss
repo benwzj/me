@@ -23,10 +23,16 @@ $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
 $yellow-color:        #efcc00 !default;
 
+// $grey-color-light:    lighten($grey-color, 40%);
+$grey-color-light:    #f0f0f0 !default;
+$grey-color-light-1:  #d5d5d5 !default;
+$grey-color-medium:   #c7c7c7 !default;
+$grey-color-medium-1: #a1a1a1 !default;
+$grey-color-medium-2: #939393 !default;
 $grey-color:          #828282 !default;
-$grey-color-light:    lighten($grey-color, 40%);
-$grey-color-dark:     #1C1C1D;
+$grey-color-deep:     #5b5b5b !default;
 $grey-900:            #212529;
+$grey-color-dark:     #1C1C1D;
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;

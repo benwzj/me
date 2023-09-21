@@ -212,7 +212,7 @@ blockquote {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
-
+    font-weight: bolder;
     &:hover {
       color: var(--global-hover-color);
     }
@@ -432,7 +432,9 @@ footer.sticky-bottom {
 .post-list {
   margin: 0;
   margin-bottom: 40px;
-  padding: 8px;
+  padding-left: 8px;
+  padding-left: 18px;
+  padding-top: 8px;
 
   .post-year {
     color: var(--global-post-title-color);
@@ -1028,7 +1030,7 @@ nav[data-toggle="toc"] {
 .category-item {
   display: flex;
   &:hover div{
-    color: green;
+    color: var(--global-theme-color);
   }
   .category-name{
     flex-grow: 12;
@@ -1045,14 +1047,20 @@ nav[data-toggle="toc"] {
 .tags {
   display: flex;
   flex-wrap: wrap;
+  a {
+    text-decoration: none; 
+  }
   .tag {
     background: var(--global-post-tag-bg-color)!important;
-    border: 1px solid blue;
+    border: 1px solid var(--global-post-tag-border-color);
     border-radius: 20px 10px;
     color: var(--global-post-tag-color);
     font-size: .8rem;
     font-weight: 400;
     padding: 0.2rem 0.4rem;
     margin: 2px;
+    &:hover{
+      border-color: var(--global-theme-color);
+    }
   }
 }

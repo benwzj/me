@@ -6,9 +6,12 @@ featured: true
 categories: Website
 tag: gitHub pages
 tag: Jekyll
+toc: 
+  - What is Jekyll
+  - Jekyll Main Points
 ---
 
-## **What is Jekyll**
+## What is Jekyll
 
 In short, Jekyll 
 - is ruby software
@@ -17,7 +20,7 @@ In short, Jekyll
 - automtically update your website when you update your files (cool thing!)
 - can run in your own computor or GitHub pages
 
-## **Jekyll Main Points**
+## Jekyll Main Points
 
 - Use Front Matter
 - Use Liquid templating language
